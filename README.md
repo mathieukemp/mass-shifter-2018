@@ -5,11 +5,11 @@
 ## Overview ##
 The Persistence testbed is used to develop advanced AUV health monitoring algorithms. It consists of a benchtop-mounted frame containing most of the LRAUV actuators, a series of National Instrument DAQs to collect actuator performance data, and a Python process that controls both actuator motion and data logging. The ultimate objective of this project is to collect data on all LRAUV actuators.
 
-## Mass shifter ##
+## Mass-shifter ##
 Data acquisition on the mass-shifter (aka pitch-pack) is now complete. Figure 1 shows the layout:
 
 ***Figure 1: Mass-shifter schematics***
-![PL_fig1.png](https://bitbucket.org/repo/oG65MB/images/3999844056-PL_fig1.png)
+![mass shifter.png](https://bitbucket.org/repo/oG65MB/images/2424408676-mass%20shifter.png)
 
 * The mass-shifter consists of a large mass attached to a lead screw driven by a DC brushed motor attached to an 84:1 gear-reduction head. The motor’s commanded position is sent by Python to the motor controller, and actuator performance is measured by five (external) sensors: an absolute mass position string potentiometer, a high-rate motor current sensor, a high-rate motor voltage sensor, and 2 piezo-accelerometers. Data is acquired by three National Instrument DAQs (Compact-DAQ 9227, 9229, 9234) synchronized by a NI-cDAQ 9174 chassis.
 
@@ -23,7 +23,8 @@ All data is stored in a TDMS file.
 Data acquisition on the thruster is underway. Figure 2 shows the layout:
 
 ***Figure 2: Thruster schematics***
-![Picture1.png](https://bitbucket.org/repo/oG65MB/images/1668572171-Picture1.png)
+![thruster.png](https://bitbucket.org/repo/oG65MB/images/1696672826-thruster.png)
+
 
 * The thruster consists of a shaft connected to a direct-drive DC brushless motor through a magnetic coupler. The motor’s commanded speed is sent by Python to the motor controller. Actuator performance is measured by three (external) sensors: a high-rate motor current sensor, a high-rate motor voltage sensor, and a single piezo-accelerometer. Data is acquired by the same National Instruments DAQs (Compact-DAQ 9227, 9229, 9234) synchronized by a NI-cDAQ 9174 chassis.
 
