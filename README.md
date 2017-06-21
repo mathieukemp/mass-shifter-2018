@@ -19,3 +19,7 @@ Data acquisition on the mass-shifter (aka pitch-pack) is complete. Figure 1 show
 
 ## Thruster ##
 Data acquisition on the thruster is underway. Figure 2 shows the layout:
+
+
+***Figure 2:***
+![Picture1.png](https://bitbucket.org/repo/oG65MB/images/1668572171-Picture1.png)
